@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Formulário de registro</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <h1>Formulário de registro Code Newsletter</h1>
+    <p>Preencha o formulário com informações corretas</p>
+    <form>
+        <fieldset>
+            <label>Nome: <input type="text" name="name" placeholder="Informe seu nome completo..." required /></label>
+            <label>Email: <input type="email" name="email" placeholder="Informe um email valido..." required /></label>
+        </fieldset>
+        <fieldset>
+            <legend>Qual é a sua área?</legend>
+            <label><input type="radio" name="interest" class="inline" checked /> Full stack</label>
+            <label><input type="radio" name="interest" class="inline" /> Back-end</label>
+            <label><input type="radio" name="interest" class="inline" /> Front-end</label>
+        </fieldset>
+        <fieldset>
+            <legend>Selecione a(s) tecnologia(s) de seu interesse:</legend>
+            <label><input type="checkbox" name="javascript" class="inline"> JavaScript</label>
+            <label><input type="checkbox" name="php" class="inline"> PHP</label>
+            <label><input type="checkbox" name="java" class="inline"> JAVA</label>
+            <label><input type="checkbox" name="python" class="inline"> Python</label>
+        </fieldset>
+        <fieldset>
+            <label>Conte-nos um pouco sobre você:
+                <textarea name="bio" rows="3" cols="30" placeholder="Eu gosto de desenvolver meus projetos no sofá..."></textarea>
+            </label>
+            <label>
+                <input type="checkbox" name="terms" class="inline" required /> Eu aceito os <a href="">termos e condições</a>.
+            </label>
+        </fieldset>
+        <input type="submit" value="Submit" />
+    </form>
+</body>
+
+</html>
